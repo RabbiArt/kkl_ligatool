@@ -24,7 +24,7 @@ class SeasonListTable extends ListTable {
    * @return array $columns, the array of columns to use with the table
    */
   function get_display_columns() {
-    return $columns = array('id' => __('id', 'kkl-ligatool'), 'league_id' => __('league', 'kkl-ligatool'), 'name' => __('name', 'kkl-ligatool'), 'start_date' => __('start', 'kkl-ligatool'), 'end_date' => __('end', 'kkl-ligatool'), 'active' => __('is_active', 'kkl-ligatool'));
+    return $columns = array('id' => __('id', 'kkl-ligatool'), 'league_id' => __('league', 'kkl-ligatool'), 'name' => __('name', 'kkl-ligatool'), 'start_date' => __('start', 'kkl-ligatool'), 'end_date' => __('end', 'kkl-ligatool'), 'active' => __('is_active', 'kkl-ligatool'), 'hide_in_overview' => __('is_hide_in_overview', 'kkl-ligatool'));
   }
   
   function column_league_id($item) {
@@ -42,6 +42,10 @@ class SeasonListTable extends ListTable {
   
   function column_active($item) {
     return $this->column_boolean($item['active']);
+  }
+
+  function column_hide_in_overview($item) {
+    return $this->column_boolean($item['hide_in_overview']);
   }
   
   function display() {

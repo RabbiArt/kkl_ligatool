@@ -276,6 +276,10 @@ msgstr "Aktuelle Saison"
 msgid "is_active"
 msgstr "aktiv?"
 
+#: KKL/Backend/KKL_Season_List_Table.php:27
+msgid "is_hide_in_overview"
+msgstr "In Club Übersicht verstecken?"
+
 #: KKL/Backend/KKL_List_Table.php:168
 msgid "search"
 msgstr "suchen"
