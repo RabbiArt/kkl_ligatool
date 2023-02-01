@@ -40,11 +40,11 @@
       "type": "package",
       "package": {
         "name": "scribu/scb-framework",
-        "version": "v61",
+        "version": "dev-master",
         "dist": {
           "type": "zip",
           "url": "https://codeload.github.com/scribu/wp-scb-framework/zip/r61",
-          "reference": "v61"
+          "reference": "dev-master"
         },
         "autoload": {
           "classmap": [
