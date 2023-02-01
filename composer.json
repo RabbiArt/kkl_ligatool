@@ -1,5 +1,5 @@
 {
-  "name": "kkl_ligatool",
+  "name": "kkl/kkl_ligatool",
   "version": "2.16.2",
   "type": "wordpress-plugin",
   "description": "Tool to manage the Kölner Kickerliga",
@@ -40,11 +40,11 @@
       "type": "package",
       "package": {
         "name": "scribu/scb-framework",
-        "version": "v61",
+        "version": "dev-master",
         "dist": {
           "type": "zip",
           "url": "https://codeload.github.com/scribu/wp-scb-framework/zip/r61",
-          "reference": "v61"
+          "reference": "dev-master"
         },
         "autoload": {
           "classmap": [
@@ -57,15 +57,21 @@
   "require": {
     "php": ">=5.6.32",
     "twig/twig": "1.13.0",
-    "scribu/scb-framework": "v61",
-    "composer/installers": "v1.5.0",
+    "scribu/scb-framework": "dev-master",
+    "composer/installers": "^v1.10.0",
     "tigokr/slack-api": "1.0",
     "zircote/swagger-php": "2.0.13",
-    "symfony/finder": "2.2",
+    "symfony/finder": "^2.2",
     "wp-cli/wp-cli-bundle": "v2.6.0",
-    "doctrine/annotations": "1.4.0",
+    "doctrine/annotations": "^1.4.0",
     "rjjakes/wordpress-orm": "dev-master",
     "yahnis-elsts/plugin-update-checker": "4.4",
-    "cweagans/composer-patches": "1.6.5"
+    "cweagans/composer-patches": "^1.6.5"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": false,
+      "cweagans/composer-patches": false
+    }
   }
 }

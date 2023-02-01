@@ -21,7 +21,7 @@ $kkl = new Plugin($pluginFile, $baseUrl, $basePath);
 $kkl->init();
 
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://github.com/steam0r/kkl_ligatool/',
+  'https://github.com/racciart/kkl_ligatool/',
   __FILE__, //Full path to the main plugin file or functions.php.
   'kkl_ligatool'
 );
